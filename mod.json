@@ -1,0 +1,40 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081"
+	},
+	"id": "aysile.layout-ai",
+	"name": "Layout AI",
+	"version": "v1.1.0",
+	"developer": "AysileRU",
+	"description": "Нейросеть (через OpenAI-совместимый API) планирует layout уровня в редакторе: песня, режимы, скорости.",
+	"tags": ["editor", "utility"],
+	"settings": {
+		"use-ai": {
+			"type": "bool",
+			"name": "Использовать нейросеть",
+			"description": "Если выключено или нет ключа, layout генерируется локально без ИИ.",
+			"default": true
+		},
+		"api-url": {
+			"type": "string",
+			"name": "API URL",
+			"description": "OpenAI-совместимый endpoint /chat/completions.",
+			"default": "https://openrouter.ai/api/v1/chat/completions"
+		},
+		"api-key": {
+			"type": "string",
+			"name": "API Key",
+			"description": "Твой ключ. Никому не отправляй файлы настроек мода.",
+			"default": ""
+		},
+		"model": {
+			"type": "string",
+			"name": "Модель",
+			"description": "Например deepseek/deepseek-chat-v3-0324:free на OpenRouter. Проверь, что модель ещё доступна.",
+			"default": "deepseek/deepseek-chat-v3-0324:free"
+		}
+	}
+}
